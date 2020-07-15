@@ -36,6 +36,7 @@ export class Search extends Component {
             onChange={this.handleChange}
             placeholder="London"
           />
+          <button type="submit" className="Search-button">Search</button>
         </div>
         {validationMessage &&
           <div className="Search-validation-msg">

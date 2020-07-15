@@ -1,6 +1,8 @@
 :root {
   --error-color: #f34c4c;
   --grayed-out-color: #d4d4d4;
+  --midnight-color: #5039a3;
+  --search-bar-height: 50px;
 }
 
 .Search {
@@ -9,7 +11,7 @@
 
 .Search label {
   display: inline-block;
-  color: #5039a3;
+  color: var(--midnight-color);
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -20,13 +22,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .Search input {
   font-size: 22px;
   width: 100%;
-  height: 50px;
+  height: var(--search-bar-height);
   padding: 10px 30px 10px 45px;
   border-radius: inherit;
   outline: none;
@@ -53,6 +55,26 @@
   height: 20px;
   fill: var(--grayed-out-color);
   left: 15px;
+}
+
+.Search-button {
+  position: absolute;
+  right: 5px;
+  height: calc(var(--search-bar-height) - 10px);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 25px;
+  background-color: var(--midnight-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  box-shadow: -10px 0 20px -7px rgba(80, 57, 163, 0.5);
+  transition: opacity 0.15s linear;
+}
+
+.Search-button:hover {
+  opacity: 0.8;
 }
 
 .Search-validation-msg {

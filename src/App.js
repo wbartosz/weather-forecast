@@ -36,7 +36,7 @@ class App extends Component {
       const forecast = await axios.get(apiURL);
 
       this.setState({
-        city: city,
+        city: forecast.data.city.name,
         country: forecast.data.city.country,
         forecast: forecast.data,
         validationMessage: null
