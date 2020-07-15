@@ -1,0 +1,41 @@
+.DataTracker {
+  text-align: center;
+  background-color: white;
+  border-radius: 23px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .DataTracker {
+    text-align: left;
+  }
+}
+
+.DataTracker-title {
+  margin-top: 0;
+}
+
+.DataTracker-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.DataTracker:hover {
+  background-color: #5039a3;
+  color: white;
+  transform: scale(1.075);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3)
+}
+
+.DataTracker-desc {
+  color: #737373;
+  transition: color 0.2s linear;
+}
+
+.DataTracker:hover .DataTracker-desc {
+  color: #c1c1c1;
+}

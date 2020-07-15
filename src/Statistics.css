@@ -1,0 +1,16 @@
+.Statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 30px;
+  margin: 20px 0;
+}
+
+.Statistics-title {
+  margin-bottom: 0;
+}
+
+.Statistics-city {
+  margin-top: 0;
+  color: #848484;
+  font-weight: 500;
+}
